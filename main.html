@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel='stylesheet' href='main.css'>
     </head>
     <body>
-        <button onclick='getNikadoQuote()'>Nikado Avocado</button>
-        <button onclick='getDwayneQuote()'>Dwayne Johnson</button>
-        <button onclick='getDouYinQuote()'>Dou Yin</button>
-        <button onclick='getHenryQuote()'>Henry Cavill</button>
-        <button onclick='getJovitQuote()'>Jovit Baldivino</button>
-        <button onclick='getQuote()' id='quoteButton'>Get Quote</button>
-        <h2 id='quote'></h2>
+        <div>
+            <div>
+                <img src='img/' id='quote_img'>
+            </div>
+            <div>
+                <button onclick='getRizalQuote()'>Jose Rizal</button>
+                <button onclick='getSocQuote()'>Socrates</button>
+                <button onclick='getSunQuote()'>Sun Tzu</button>
+                <button onclick='getNietQuote()'>Nietzsche</button>
+                <button onclick='getMartinQuote()'>Martin Luther King Jr.</button>
+            </div>
+            <div>
+                <button onclick='getQuote()' id='quoteButton'>Get Quote</button>
+            </div>
+            <h2 id='quote'></h2>
+        </div>
+
         <script src='main.js'></script>
     </body>
 </html>
