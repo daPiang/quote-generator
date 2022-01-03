@@ -4,21 +4,27 @@
         <link rel='stylesheet' href='main.css'>
     </head>
     <body>
-        <div>
-            <div>
-                <img src='img/' id='quote_img'>
+        <div class='main'>
+            <div class='container_1'>
+                <img src='img/blank.png' id='quote_img' class='image'>
+                <div class='content_container'>
+                    <div class='quote_container'>
+                        <h2 id='quote' class='quote'></h2>
+                    </div>
+                    <div class='button_container'>
+                        <div>
+                            <button onclick='getRizalQuote()'>Jose Rizal</button>
+                            <button onclick='getSocQuote()'>Socrates</button>
+                            <button onclick='getSunQuote()'>Sun Tzu</button>
+                            <button onclick='getNietQuote()'>Nietzsche</button>
+                            <button onclick='getMartinQuote()'>Martin Luther King Jr.</button>
+                        </div>
+                        <div class='quote_button'>
+                            <button onclick='getQuote()' id='quoteButton'>Get Quote</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <button onclick='getRizalQuote()'>Jose Rizal</button>
-                <button onclick='getSocQuote()'>Socrates</button>
-                <button onclick='getSunQuote()'>Sun Tzu</button>
-                <button onclick='getNietQuote()'>Nietzsche</button>
-                <button onclick='getMartinQuote()'>Martin Luther King Jr.</button>
-            </div>
-            <div>
-                <button onclick='getQuote()' id='quoteButton'>Get Quote</button>
-            </div>
-            <h2 id='quote'></h2>
         </div>
 
         <script src='main.js'></script>
