@@ -2,29 +2,51 @@
 <html>
     <head>
         <link rel='stylesheet' href='main.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
     </head>
     <body>
+
         <div class='main'>
-            <div class='container_1'>
-                <img src='img/blank.png' id='quote_img' class='image'>
-                <div class='content_container'>
-                    <div class='quote_container'>
-                        <h2 id='quote' class='quote'></h2>
-                    </div>
-                    <div class='button_container'>
-                        <div>
-                            <button onclick='getRizalQuote()'>Jose Rizal</button>
-                            <button onclick='getSocQuote()'>Socrates</button>
-                            <button onclick='getSunQuote()'>Sun Tzu</button>
-                            <button onclick='getNietQuote()'>Nietzsche</button>
-                            <button onclick='getMartinQuote()'>Martin Luther King Jr.</button>
-                        </div>
-                        <div class='quote_button'>
-                            <button onclick='getQuote()' id='quoteButton'>Get Quote</button>
-                        </div>
-                    </div>
+            
+            <div class='content bg'>
+                <img src='img/img/bg_martin.jpg' class='bg_img' id='bg'>
+            </div>
+
+            <div class='content person'>
+                <img src='img/img/martin.png' class='person_img' id='person'>
+            </div>
+
+            <div class='content frame'>
+                <img src='img/img/frame.png' class='frame_img'>
+            </div>
+
+            <div class='content plate'>
+                <img src='img/img/plate.png' class='plate_img'>
+
+                <div class='content name'>
+                    <h1 class='nameplate' id='name'>Martin Luther<br>King Jr.</h1>
                 </div>
             </div>
+
+            
+
+            <div class='content quote'>
+                <h1 class='quote_txt' id='quote'>Lorem ipsum dolor sit amet</h1>
+            </div>
+
+            
+
+        </div>
+
+        <div class='content button'>
+            <button onclick='getRizalQuote()'>Rizal</button>
+            <button onclick='getSocQuote()'>Socrates</button>
+            <button onclick='getNietQuote()'>Nietzsche</button>
+            <button onclick='getMartinQuote()'>Martin Luther King Jr.</button>
+            <button onclick='getSunQuote()'>Sun Tzu</button>
+            <button onclick='getQuote()' id='quote_btn'>Get Quote</button>
         </div>
 
         <script src='main.js'></script>
